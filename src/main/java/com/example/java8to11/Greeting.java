@@ -8,6 +8,10 @@ public class Greeting {
 
     }
 
+    public String getName() {
+        return name;
+    }
+
     public Greeting(String name) {
         this.name = name;
     }
