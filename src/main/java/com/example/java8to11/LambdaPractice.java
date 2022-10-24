@@ -17,14 +17,15 @@ public class LambdaPractice {
         // 로컬 클래스
         class LocalClass {
             void printBaseNumber() {
-                System.out.println(baseNumber);
+                int baseNumber = 11;
+                System.out.println(baseNumber); //11 출력 됨(쉐도윙)
             }
         }
 
         // 익명 클래스
         Consumer<Integer> integerConsumer = new Consumer<Integer>() {
             @Override
-            public void accept(Integer integer) {
+            public void accept(Integer baseNumber) {//변수 쉐도윙
                 System.out.println(baseNumber);
             }
         };
